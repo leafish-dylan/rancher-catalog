@@ -1,0 +1,18 @@
+.catalog:
+  name: "nginx"
+  version: "v0"
+  description: "nginx on Alpine Linux configured for Drupal hosting"
+  uuid: nginx-0
+  questions:
+    - variable: "VERSION"
+      label: "nginx version"
+      description: "Specify a version of the nginx image to pull (default will pull latest stable version)."
+      type: "string"
+      default: "latest" 
+      required: true
+    - variable: "VIRTUAL_HOST"
+      label: "Virtual Host"
+      description: "Specify a virtual host (vhost) here. This is used to route requests from the load-balancer.
+      type: "string"
+      default: "default" 
+      required: true

@@ -1,0 +1,5 @@
+name: nginx
+description: |
+  nginx built on alpine, configured for Drupal hosting
+version: v0
+category: web
